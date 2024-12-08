@@ -1,0 +1,99 @@
+@font-face {
+    font-family: kinkee;
+    src: url("../fonts/KINKEE__.TTF");
+}
+
+
+h1 {
+    font-family: kinkee;
+    color: #4b2d00;
+    font-size: 60px;
+    margin: auto;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #4b2d00;
+    font-weight: bolder;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+}
+#reset {
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #4b2d00;
+    margin: auto;
+    padding: 0%;
+    margin-bottom: 5px;
+    background-color: pink;
+    border: 1px solid #4b2d00;
+    border-radius: 30px;
+    padding: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+#reset:hover {
+    background-color: #faffb0;
+    transform: scale(1.05);
+}
+form {
+    background: #ffe6f3;
+    padding: 20px;
+    border: 1px solid #4b2d00;
+    border-radius: 30px;
+}
+
+.grid-controls {
+    display: grid;
+    grid-template-areas:
+        ". up ."
+        "left . right"
+        ". down .";
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+
+button img {
+    width: 50%;
+    height: auto;
+}
+
+button[name="move"][value="up"] {
+    grid-area: up;
+}
+
+button[name="move"][value="left"] {
+    grid-area: left;
+}
+
+button[name="move"][value="right"] {
+    grid-area: right;
+}
+
+button[name="move"][value="down"] {
+    grid-area: down;
+}
